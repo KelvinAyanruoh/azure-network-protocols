@@ -88,7 +88,7 @@ After configuring the Network security group, we could see that the traffic has 
 </p>
 <br />
 
-<h2>SSH protocol</h2>
+<h2>SSH protocol TCP port 22</h2>
 
 </p>
 <p>
@@ -102,8 +102,51 @@ It is a secure shell that is used to connect to remote machines. Below, we can o
 <p>
 <img width="1331" height="598" alt="image" src="https://github.com/user-attachments/assets/13c7a9f1-e351-42d3-9871-42473c3a1e85" />
 
+
+<h2>DHCP traffic UDP port 67 and 68 </h2>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+DHCP (Dynamic Host Configuration Protocol) is a mechanism that assigns an IP address to different machines, and it uses UDP ports 67 and 68.
+  When DHCP is in action, which can be triggered by using 'IPconfig /renew, there are behind-the-scenes processes to take note of; these are 
+
+  - Broadcast
+  - Offer
+  - Request
+  - Acknowledge
+
+    
 </p>
 <br />
+
+<p>
+<img width="1164" height="617" alt="image" src="https://github.com/user-attachments/assets/2b55229c-6b9b-427c-8186-b4d8a27eb0d4" />
+
+</p>
+<br />
+
+</p>
+<p>
+Ran into some issues when running the ipconfig \renew. As seen below, I was only seeing the request.
+  
+  - HOW TO SOLVE
+
+  - 1: Open Notepad
+  - 2: Insert ipconfig \release, ipconfig \renew
+  - 3: save file is C drive
+  - 4: Back to the PowerShell shell and run the text file
+<p>
+</p>
+<br />
+
+<p>
+<img width="437" height="423" alt="image" src="https://github.com/user-attachments/assets/f2ef4d26-b478-4e66-ae7f-7c262371da4b" />
+
+
+</p>
+<br />
+
+<p>
+<img width="615" height="627" alt="image" src="https://github.com/user-attachments/assets/b31a5df7-2242-4e4a-ac00-2a7f8013d7f1" />
+
+
